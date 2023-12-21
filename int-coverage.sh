@@ -27,3 +27,4 @@ fi
 ./bin/calculator multiply 8 5
 
 go tool covdata percent -i=./coverage/int
+go tool covdata textfmt -i=./coverage/int -o coverage/profile
