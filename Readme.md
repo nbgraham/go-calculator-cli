@@ -1,0 +1,1 @@
+Running `go test -coverprofile=cover.out` does not produce any coverage on `internal/multiply` nor `internal/add`

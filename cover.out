@@ -1,0 +1,12 @@
+mode: set
+calculator/calculator.go:11.17,12.26 1 1
+calculator/calculator.go:12.26,15.3 2 1
+calculator/calculator.go:17.2,19.16 3 1
+calculator/calculator.go:19.16,22.3 2 0
+calculator/calculator.go:23.2,24.16 2 1
+calculator/calculator.go:24.16,27.3 2 0
+calculator/calculator.go:29.2,29.19 1 1
+calculator/calculator.go:30.13,31.41 1 1
+calculator/calculator.go:32.18,33.55 1 1
+calculator/calculator.go:34.10,36.11 2 1
+calculator/calculator.go:38.2,38.10 1 1

@@ -1,0 +1,19 @@
+# With no arguments, fail and print a usage message
+! exec calculator
+! stdout .
+stderr 'usage: calculator OPERATION A B'
+
+# Unknown operation
+! exec calculator divide 2 8
+! stdout .
+stderr 'unknown operation: divide'
+
+# Add
+exec calculator add 2 8
+stdout 'sum: 10'
+! stderr .
+
+# Multiply
+exec calculator multiply 5 6
+stdout 'product: 30'
+! stderr .
