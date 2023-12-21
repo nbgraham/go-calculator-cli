@@ -15,14 +15,16 @@ func Main() int {
 	}
 
 	operation := os.Args[1]
+
 	a, err := strconv.Atoi(os.Args[2])
 	if err != nil {
-		fmt.Fprint(os.Stderr, err)
+		fmt.Fprintln(os.Stderr, err)
 		return 1
 	}
+
 	b, err := strconv.Atoi(os.Args[3])
 	if err != nil {
-		fmt.Fprint(os.Stderr, err)
+		fmt.Fprintln(os.Stderr, err)
 		return 1
 	}
 
@@ -32,8 +34,9 @@ func Main() int {
 	case "multiply":
 		fmt.Printf("product: %d\n", multiply.Multiply(a, b))
 	default:
-		fmt.Fprintf(os.Stderr, "unknown operation: %s", operation)
+		fmt.Fprintf(os.Stderr, "unknown operation: %s\n", operation)
 		return 1
 	}
+
 	return 0
 }
